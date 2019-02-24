@@ -1,22 +1,9 @@
-/* Sonic 1 Master System Disassembly
-   created by Kroc Camen <kroc@camendesign.com>
-   for MaSS1VE: The Master System Sonic 1 Visual Editor <github.com/Kroc/MaSS1VE>
+/* Sonic 4
+   created by MicroshaftCorp on GitHub
+   for MaSS1VE: The Master System Sonic 4 Visual Editor <github.com/Kroc/MaSS1VE>
    ================================================================================= */
 /* please use tab stops at 8 and a line width of 88 chars, thanks
    ================================================================================= */
-/*
-			W    A    R    N    I    N    G    !
-	
-	Here be dragons! This disassembly is in progress, expect constant
-	changes as well as future planned improvements:
-	
-	*	split up into categorised files
-	
-	*	fully commented and described program flow
-	
-	*	portable data
-
-   --------------------------------------------------------------------------------- */
 /* This source code is given to the public domain:
    
    whilst "SEGA" and "Sonic" are registered trademarks of Sega Enterprises, Ltd.,
@@ -27,31 +14,7 @@
    the original ROM is also not a copyright violation -- SEGA don't own a patent on
    the compiling algorithm
 
-   --------------------------------------------------------------------------------- */
-/* this disassembly was made by using these tools:
-
-:: SMSExamine: <smspower.org/Development/SMSExamine>
-	this excellent tool disassembles much of the ROM by effectively 'running'
-	the code to determine what parts are code and what parts are data.
-	this saved a very large amount of effort, but due to the dynamic and complex
-	nature of code, it didn't get all of it right, therefore I used:
  
-:: dz80: <inkland.org.uk/dz80>
-	to do a byte-for-byte disassembly to fill in the blanks (this had to all be
-	manually labelled!). that was largely wasted time as I later got help from
-	the author of:
- 
-:: Emulicious: <emulicious.net>
-	which was able to provide a far superior disassembly that filled in all the
-	gaps through a specific configuration file provided kindly by the author to
-	assist me
- 
-:: WLA DX <villehelin.com/wla.html>
-	I was intending to write my own Z80 assembler (in VB6!), but I have found --
-	after some struggling to learn it -- that WLA DX will do an excellent job
-
-   this disassembly was made possible by earlier documentation provided by
-   David Declerk, ValleyBell, Penta Penguin and Ravenfreak */
 
 
 /* memory configuration:
@@ -6809,11 +6772,11 @@ S1_Credits_Text:			;[$2905]
 .db      $14, $03 ;, $AE, $9E, $7F, $5E, $2E			;SONIC
 .asc "SQNIC"
 .db $FE, $15, $04, $AF, $4F, $3E				;THE
-.db $FE, $13, $05, $4F, $3E, $2F, $4E, $3E, $4F, $9E, $4E	;HEDGEHOG
+.db $FE, $13, $05, $4F, $3E, $2F, $4E, $3E, $4F, $9E, $4E	;HEDGEHOG 4
 .db $FD, $3C, $00
-.db $FE, $12, $0C, $7E, $1E, $AE, $AF, $3E, $9F			;MASTER
-.db $FE, $13, $0D, $AE, $DE, $AE, $AF, $3E, $7E			;SYSTEM
-.db $FE, $14, $0E, $BF, $3E, $9F, $AE, $5E, $9E, $7F		;VERSION
+.db $FE, $12, $0C, $7E, $1E, $AE, $AF, $3E, $9F			;AN
+.db $FE, $13, $0D, $AE, $DE, $AE, $AF, $3E, $7E			;SMS
+.db $FE, $14, $0E, $BF, $3E, $9F, $AE, $5E, $9E, $7F		;GAME
 .db $FD, $3C, $00
 .db $FC, $09
 .db $FE, $14, $0B, $AE, $9E, $7F, $5E, $2E			;SONIC
@@ -6865,7 +6828,7 @@ S1_Credits_Text:			;[$2905]
 .db $FD, $F0, $00
 .db $FC, $09
 .db $FE, $13, $0D, $AE, $8F, $3E, $2E, $5E, $1E, $6F		;SPECIAL
-.db $FE, $15, $0E, $AF, $4F, $1E, $7F, $6E, $AE			;THANKS
+.db $FE, $15, $0E, $AF, $4F, $1E, $7F, $6E, $AE			;THANKS TO
 .db $FD, $B4, $00
 .db $FC, $02
 .db $FE, $13, $0E, $DE, $8E, $AE, $4F, $5E, $8E, $EB, $DE	;YOSHIRO Y
@@ -6878,7 +6841,7 @@ S1_Credits_Text:			;[$2905]
 .db $FE, $16, $0E, $1F, $DE					;BY
 .db $FE, $15, $10, $AE, $3E, $4E, $1E				;SEGA
 .db $FD, $B4, $00
-.db $FE, $19, $13, $3E, $7F, $2F				;END
+.db $FE, $19, $13, $3E, $7F, $2F				;FIN
 .db $FF
 
 S1_Credits_Palette:			;[$2AD6]
