@@ -42,9 +42,9 @@ $01213-14		Bridge Act 3 (=$123C)
 $01215-16		Jungle Act 1 (=$124B)
 $01217-18		Jungle Act 2 (=$124B)
 $01219-1A		Jungle Act 3 (=$124B)
-$0121B-1C		Labyrinth Act 1 (=$125A)
-$0121D-1E		Labyrinth Act 2 (=$125A)
-$0121F-20		Labyrinth Act 3 (=$125A)
+$0121B-1C		Namcap Act 1 (=$125A)
+$0121D-1E		Namcap Act 2 (=$125A)
+$0121F-20		Namcap Act 3 (=$125A)
 $01221-22		Scrap Brain Act 1 (=$1269)
 $01223-24		Scrap Brain Act 2 (=$1269)
 $01225-26		Scrap Brain Act 3 (=$1269)
@@ -57,7 +57,7 @@ $0122D - $01286		Zone Titles:
 $0122D-3B		"GREEN HILL"
 $0123C-4A		"BRIDGE"
 $0124B-59		"JUNGLE"
-$0125A-68		"LABYRINTH"
+$0125A-68		"NAMCAP"
 $01269-77		"SCRAP BRAIN"
 $01278-86		"SKY BASE"
 -----------------------------------------------------------------------------
@@ -100,7 +100,7 @@ $0628C - $0629D		Palette Cycle Pointers:
 $0628C-D		0: Green Hill (=$62BE)
 $0628E-F		1: Bridge (=$630E)
 $06290-1		2: Jungle (=$635E)
-$06292-3		3: Labyrinth (=$63AE)
+$06292-3		3: Namcap (=$63AE)
 $06294-5		4: Scrap Brain (=$63FE)
 $06296-7		5: Sky Base 1 (=$645E)
 $06298-9		6: Sky Base 2-Interior / 3 (=$65AE)
@@ -169,9 +169,9 @@ $1558A-8B		05: Bridge Act 3
 $1558C-8D		06: Jungle Act 1
 $1558E-8F		07: Jungle Act 2
 $15590-91		08: Jungle Act 3
-$15592-93		09: Labyrinth Act 1
-$15594-95		10: Labyrinth Act 2
-$15596-97		11: Labyrinth Act 3
+$15592-93		09: Namcap Act 1
+$15594-95		10: Namcap Act 2
+$15596-97		11: Namcap Act 3
 $15598-99		12: Scrap Brain Act 1
 $1559A-9B		13: Scrap Brain Act 2
 $1559C-9D		14: Scrap Brain Act 3
@@ -210,9 +210,9 @@ $156A8 - $156CC      	Bridge Act 3
 $156CD - $156F1      	Jungle Act 1
 $156F2 - $15716      	Jungle Act 2
 $15717 - $1573B      	Jungle Act 3
-$1573C - $15760      	Labyrinth Act 1
-$15761 - $15785      	Labyrinth Act 2
-$15786 - $157AA      	Labyrinth Act 3
+$1573C - $15760      	Namcap Act 1
+$15761 - $15785      	Namcap Act 2
+$15786 - $157AA      	Namcap Act 3
 $157AB - $157CF      	Scrap Brain Act 1
 $157D0 - $157F4      	Scrap Brain Act 2
 $157F5 - $15819      	Scrap Brain Act 2 (Emerald Maze), From Corridor
@@ -246,9 +246,9 @@ $15BD6 - $15BEB        	Bridge Act 3 (8 Objects)
 $15BEC - $15C43		Jungle Act 1 (30 Objects)
 $15C44 - $15C8C		Jungle Act 2 (25 Objects)
 $15C8D - $15CA2		Jungle Act 3 (8 Objects)
-$15CA3 - $15CF1		Labyrinth Act 1 (27 Objects)
-$15CF2 - $15D49		Labyrinth Act 2 (30 Objects)
-$15D4A - $14D68		Labyrinth Act 3 (11 Objects)
+$15CA3 - $15CF1		Namcap Act 1 (27 Objects)
+$15CF2 - $15D49		Namcap Act 2 (30 Objects)
+$15D4A - $14D68		Namcap Act 3 (11 Objects)
 $15D69 - $15DAB		Scrap Brain Act 1 (23 Objects)
 $15DAC - $15DE8		Scrap Brain Act 2 (21 Objects)
 $15DE9 - $15E34		Scrap Brain Act 2, Emerald Maze (26 Objects)
@@ -314,7 +314,7 @@ $1FBA1 - $1FFFF		*** EMPTY SPACE ***
 
 $20000 - $25FFF		Sonic Player Sprites (512 Tiles)
 /// $24000 /////////////////////////////////////////////////////// BANK 9 ///
-$26000 – $32FE5		Tile and Sprite Sets:
+$26000 Â– $32FE5		Tile and Sprite Sets:
 -----------------------------------------------------------------------------
 $26000 - $2751E		Title Screen Tile Set (256 Tiles)
 $2751F - $28293		"Sonic Has Passed" Screen Tile Set (256 Tiles)
@@ -341,12 +341,12 @@ $2FFF0 - $2FFFF		*** EMPTY SPACE ***
 $30000 - $31800		Map Screen 1 Tile Set (256 Tiles)
 $31801 - $32FE5		Map Screen 2 / Credits Screen Tile Set (256 Tiles)
 -----------------------------------------------------------------------------
-$32FE6 – $3DA27		Level Art:
+$32FE6 Â– $3DA27		Level Art:
 -----------------------------------------------------------------------------
 $32FE6 - $32FED		Header for Green Hill Art
-$32FEE – $330ED		Unique row list for Green Hill
-$330EE – $337A7		Duplicate row list for Green Hill
-$337A8 – $34577		Green Hill Art Data
+$32FEE Â– $330ED		Unique row list for Green Hill
+$330EE Â– $337A7		Duplicate row list for Green Hill
+$337A8 Â– $34577		Green Hill Art Data
 ///////////////////////////////////////////////////////////////// BANK 13 ///
 $34578 - $3457F         Header For Bridge Art
 $34580 - $3467F         Unique row list For Bridge
@@ -379,7 +379,7 @@ $3C806 - $3C905         Unique row list For Special Stages
 $3C906 - $3CF53         Duplicate row list For Special Stages
 $3CF54 - $3DA27         Art Data For Special Stages
 -----------------------------------------------------------------------------
-$3DA28 – $3FF20		Capsule Art
+$3DA28 Â– $3FF20		Capsule Art
 $3E508 - $3EF3E		Boss Sprite Art 2
 $3EF3F - $3FF20		Boss Sprite Art 3
 $3FF21 - $40000		*** EMPTY SPACE ***
