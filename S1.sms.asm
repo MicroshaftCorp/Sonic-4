@@ -71,7 +71,7 @@
 	;once all large data is inserted with `INCBIN`, this won't be needed
 	.BACKGROUND "ROM.sms"
 .ELSE
-	.PRINTT "Please provide a Sonic 1 ROM "
+	.PRINTT "Please provide a Sonic 4 ROM "
 	.PRINTT "named 'ROM.sms' to fill in the data banks\n"
 	.FAIL
 .ENDIF
