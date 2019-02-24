@@ -2,10 +2,10 @@
 
 S1_MusicPointers:
 .DEF index_music_greenHill $00
-.dw S1_Music_GreenHill			;$47D0 [$C7D0]
+.dw S1_Music_GreenHill	;$574A[$C7D0]
 
 .DEF index_music_bridge $01
-.dw S1_Music_Bridge			;$574A [$D74A]
+.dw S1_Music_Bridge			;$47D0[$D74A]
 
 .DEF index_music_jungle $02
 .dw S1_Music_Jungle			;$524A [$D24A]
